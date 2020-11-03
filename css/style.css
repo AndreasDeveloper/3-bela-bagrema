@@ -6,11 +6,11 @@
 
 
 body {
-    font-family: Noto, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
-    color: #777;
+    color: #111;
     padding: 30px;
 
 }
@@ -47,9 +47,15 @@ body {
     left: 50%;
     transform: translate(-50%, -70%);
 }
+@media only screen and (max-width: 768px) {
+    .icon-wrap {
+        top: 80%;
+    }
+}
 .icon-wrap ul {
     display: flex;
     justify-content: center;
+    list-style: none;
 }
 
 .contact-deatils {
@@ -191,6 +197,23 @@ a.socialIcon:hover, .socialHoverClass {
 
 a {
     background-color: #fff;
+}
+
+/* Section About */
+.section-about {
+    min-height: 50vh;
+}
+.section-about h2 {
+    color: #111;
+    font-size: 35px;
+    text-align: center;
+}
+
+.about-left {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-left: 50px;
 }
     
 /* Typography */
