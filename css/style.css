@@ -1,0 +1,200 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+body {
+    font-family: Noto, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;
+    padding: 30px;
+
+}
+.header {
+    height: 95vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(113, 156, 236, 0.8),
+        rgba(81, 184, 146, 0.8)),
+        url(../img/hero.jpg);
+    background-size: cover;
+    background-position: top;
+
+    clip-path: polygon(0 0, 100% 0,100% 80vh, 0 100%);
+}
+
+.text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+ 
+    
+
+
+
+.heading-primary {
+    color: antiquewhite;
+    text-transform: uppercase;
+
+}
+.heading-primary-main{
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 10px;
+
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+
+}
+.heading-primary-sub {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 17.4px;
+    animation: moveInRight 1s ease-out;
+
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+
+    }
+
+    80% {
+        transform: translateX(10px);
+
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+
+    }
+
+    80% {
+        transform: translateX(-10px);
+
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+.social-network a.icoRss:hover {
+    background-color: #F56505;
+}
+.social-network a.icoFacebook:hover {
+    background-color:#3B5998;
+}
+.social-network a.icoTwitter:hover {
+    background-color:#33ccff;
+}
+.social-network a.icoGoogle:hover {
+    background-color:#BD3518;
+}
+.social-network a.icoVimeo:hover {
+    background-color:#0590B8;
+}
+.social-network a.icoLinkedin:hover {
+    background-color:#007bb7;
+}
+.social-network a.icoInstagram:hover {
+    background-color: orangered;
+}
+.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i, .social-network a.icoInstagram:hover i {
+    color:#fff;
+}
+a.socialIcon:hover, .socialHoverClass {
+    color:#44BCDD;
+}
+
+.social-circle li a {
+    display:inline-block;
+    position:relative;
+    margin:0 auto 0 auto;
+    margin-left: 20px;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    border-radius:50%;
+    text-align:center;
+    width: 50px;
+    height: 50px;
+    font-size:20px;
+}
+.social-circle li i {
+    margin:0;
+    line-height:50px;
+    text-align: center;
+}
+
+.social-circle li a:hover i, .triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.social-circle i {
+    color: black;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+a {
+    background-color: #fff;
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
