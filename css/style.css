@@ -14,6 +14,8 @@ body {
     padding: 30px;
 
 }
+
+/* Header */
 .header {
     height: 95vh;
     background-image: linear-gradient(
@@ -27,6 +29,11 @@ body {
     clip-path: polygon(0 0, 100% 0,100% 80vh, 0 100%);
 }
 
+.container {
+    position: relative;
+    height: inherit;
+}
+
 .text-box {
     position: absolute;
     top: 40%;
@@ -34,10 +41,28 @@ body {
     transform: translate(-50%, -50%);
 }
 
+.icon-wrap {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+.icon-wrap ul {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-deatils {
+    color: antiquewhite;
+    margin-top: 30px;
+    text-align: center;
+}
+
 
 .heading-primary {
     color: antiquewhite;
     text-transform: uppercase;
+    text-align: center;
 
 }
 .heading-primary-main{
@@ -168,7 +193,10 @@ a {
     background-color: #fff;
 }
     
-
+/* Typography */
+.center {
+    text-align: center;
+}
 
 
 
