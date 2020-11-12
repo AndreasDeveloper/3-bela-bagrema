@@ -38,7 +38,6 @@ blocksArr.map((el, i) => {
     });
 
     el.addEventListener('touchstart', () => {
-        alert('Pusi ga siso')
         options.index = i;
         // Initializes and opens PhotoSwipe
         var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
