@@ -240,9 +240,27 @@ a {
     justify-content: center;
 }
 .gallery-main img {
-    width: 45%;
+    width: 49%;
     height: auto;
     margin: 0 5px;
+}
+.gallery-full {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.gallery-full img {
+    margin-top: 10px;
+    /* height: 266px; */
+    width: 24.35%;
+}
+.gallery-end {
+    margin-top: 10px;
+}
+
+#g4, #g5, #g8, #g9, #g12, #g13 {
+    margin: 0 5px;
+    margin-top: 10px;
 }
     
 /* Typography */
