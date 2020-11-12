@@ -1,0 +1,1 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/870687bc-c825-4c21-ae69-97626a979747/deploy-status)](https://app.netlify.com/sites/tribelabagrema/deploys)
