@@ -37,7 +37,7 @@ blocksArr.map((el, i) => {
         gallery.init();
     });
 
-    el.addEventListener('touchstart', () => {
+    el.addEventListener('touchend', () => {
         options.index = i;
         // Initializes and opens PhotoSwipe
         var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
