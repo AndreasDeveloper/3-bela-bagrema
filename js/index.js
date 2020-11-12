@@ -14,12 +14,12 @@ var items = [
     { src: './img/g8.jpg', w: 1500, h: 900 },
     { src: './img/g9.jpg', w: 1500, h: 900 },
     { src: './img/g10.jpg', w: 1500, h: 900 },
+    { src: './img/g16.jpg', w: 1500, h: 900 },
+    { src: './img/g13.jpg', w: 1500, h: 900 },
+    { src: './img/g15.jpg', w: 1500, h: 900 },
+    { src: './img/g14.jpg', w: 1500, h: 900 },
     { src: './img/g11.jpg', w: 1500, h: 900 },
     { src: './img/g12.jpg', w: 1500, h: 900 },
-    { src: './img/g13.jpg', w: 1500, h: 900 },
-    { src: './img/g14.jpg', w: 1500, h: 900 },
-    { src: './img/g15.jpg', w: 1500, h: 900 },
-    { src: './img/g16.jpg', w: 1500, h: 900 },
 ];
 
 // define options (if needed)
@@ -33,7 +33,7 @@ blocksArr.map((el, i) => {
     el.addEventListener('click', () => {
         options.index = i;
         // Initializes and opens PhotoSwipe
-        var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+        var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
         gallery.init();
     });
 });
