@@ -6,11 +6,17 @@
     <meta name="viewport" content="width=device-width, inital-scale=1.0">
     <meta http-equiv="X-UA-Comatible" content="ie=edge">
 
-    <link href="https://fonts.google.com/specimen/Noto+Sans+JP?sidebar.open=true&selection.family=Noto+Sans+JP:wght@100;300;400;500;700;900#standard-styles" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.google.com/specimen/Noto+Sans+JP?sidebar.open=true&selection.family=Noto+Sans+JP:wght@100;300;400;500;700;900#standard-styles"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./plugin/PhotoSwipe/dist/photoswipe.css" />
+    <link rel="stylesheet" href="./plugin/PhotoSwipe/dist/default-skin/default-skin.css" />
 
     <title>3 Bela Bagrema</title>
 </head>
@@ -21,8 +27,10 @@
         <div class="container">
             <div class="icon-wrap">
                 <ul class="social-network social-circle">
-                    <li><a href="https://www.facebook.com/hasky.haskic" class="icoFacebook" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://www.instagram.com/3_bela_bagrema/?hl=en" class="icoInstagram" title="Instagram" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.facebook.com/hasky.haskic" class="icoFacebook" title="Facebook"
+                            target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/3_bela_bagrema/?hl=en" class="icoInstagram" title="Instagram"
+                            target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                 </ul>
                 <div class="contact-deatils">
                     <span>3belabagrema@gmail.com |</span>
@@ -61,31 +69,107 @@
         <div class="gallery">
             <div class="gallery-main">
                 <img id="g1" src="./img/g1.jpg" alt="" />
-                <img src="./img/g2.jpg" alt="" />
+                <img id="g2" src="./img/g2.jpg" alt="" />
             </div>
             <div class="gallery-full">
-                <img src="./img/g3.jpg" alt="" />
+                <img id="g3" src="./img/g3.jpg" alt="" />
                 <img id="g4" src="./img/g4.jpg" alt="" />
                 <img id="g5" src="./img/g5.jpg" alt="" />
-                <img src="./img/g6.jpg" alt="" />
+                <img id="g6" src="./img/g6.jpg" alt="" />
 
-                <img src="./img/g7.jpg" alt="" />
+                <img id="g7" src="./img/g7.jpg" alt="" />
                 <img id="g8" src="./img/g8.jpg" alt="" />
                 <img id="g9" src="./img/g9.jpg" alt="" />
-                <img src="./img/g10.jpg" alt="" />
+                <img id="g10" src="./img/g10.jpg" alt="" />
 
-                <img src="./img/g16.jpg" alt="" />
+                <img id="g11" src="./img/g16.jpg" alt="" />
                 <img id="g12" src="./img/g13.jpg" alt="" />
                 <img id="g13" src="./img/g15.jpg" alt="" />
-                <img src="./img/g14.jpg" alt="" />
+                <img id="g14" src="./img/g14.jpg" alt="" />
             </div>
             <div class="gallery-main gallery-end">
-                <img src="./img/g11.jpg" alt="" />
-                <img src="./img/g12.jpg" alt="" />
+                <img id="g15" src="./img/g11.jpg" alt="" />
+                <img id="g16" src="./img/g12.jpg" alt="" />
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="left">
+                <ul class="social-network social-circle">
+                    <li><a href="https://www.facebook.com/hasky.haskic" class="icoFacebook" title="Facebook"
+                            target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/3_bela_bagrema/?hl=en" class="icoInstagram" title="Instagram"
+                            target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="center">
+                <h3>3 Bela Bagrema</h3>
+                <div class="contact-deatils">
+                    <span>3belabagrema@gmail.com |</span>
+                    <span>+381 612346343</span>
+                </div>
+            </div>
+            <div class="right">
+                <p>Designed & Developed by Nebojsa Dev & Andreas Dev.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- PhotoSwipe -->
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+        <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+            <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+                    <div class="pswp__counter"></div>
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                    <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <!-- element will get class pswp__preloader--active when preloader is running -->
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./plugin/PhotoSwipe/dist/photoswipe.min.js"></script>
+    <script src="./plugin/PhotoSwipe/dist/photoswipe-ui-default.min.js"></script>
     <script src="./js/index.js"></script>
 </body>
+
 </html>
