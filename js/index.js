@@ -1,10 +1,10 @@
 var pswpElement = document.querySelectorAll('.pswp')[0];
-const blocks = document.querySelectorAll('img');
+const blocks = document.querySelectorAll('.gallery img');
 const blocksArr = [...blocks];
 
 // build items array
 var items = [
-    { src: '/img/g1.jpg', w: 1500, h: 900 },
+    { src: './img/g1.jpg', w: 1500, h: 900 },
     { src: './img/g2.jpg', w: 1500, h: 900 },
     { src: './img/g3.jpg', w: 1500, h: 900 },
     { src: './img/g4.jpg', w: 1500, h: 900 },
