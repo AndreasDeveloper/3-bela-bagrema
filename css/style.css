@@ -251,8 +251,12 @@ a {
 }
 .gallery-full img {
     margin-top: 10px;
-    /* height: 266px; */
     width: 24.35%;
+}
+@media only screen and (max-width: 800px) {
+    .gallery-full img {
+        width: 100%;
+    }
 }
 .gallery-end {
     margin-top: 10px;
