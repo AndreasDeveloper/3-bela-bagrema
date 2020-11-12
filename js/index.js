@@ -36,4 +36,11 @@ blocksArr.map((el, i) => {
         var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
         gallery.init();
     });
+
+    el.addEventListener('touchstart', () => {
+        options.index = i;
+        // Initializes and opens PhotoSwipe
+        var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+        gallery.init();
+    });
 });
